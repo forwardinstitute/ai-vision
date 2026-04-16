@@ -366,6 +366,48 @@
     font-size: 13px;
   }
 
+  /* External callout */
+  .external-callout {
+    margin: 2.5rem 0;
+    padding: 24px 28px;
+    border-left: 3px solid var(--sunshine);
+    background: rgba(255, 204, 18, 0.06);
+    border-radius: 0 8px 8px 0;
+    text-decoration: none;
+    display: block;
+    transition: background 0.25s ease;
+  }
+
+  .external-callout:hover {
+    background: rgba(255, 204, 18, 0.12);
+  }
+
+  .external-callout .callout-source {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--sunshine);
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .external-callout .callout-headline {
+    font-family: 'Inria Serif', serif;
+    font-size: 1.3rem;
+    line-height: 1.35;
+    color: var(--day);
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .external-callout .callout-detail {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: rgba(252, 242, 227, 0.5);
+    display: block;
+  }
+
   /* Stat blocks */
   .stats {
     display: grid;
@@ -734,6 +776,11 @@
     <div class="divider"></div>
     <h2 id="reset-heading" class="reset-glitch">This is a reset moment.</h2>
     <p class="lead">The default organisational response to AI is to use it to do what we already do, faster. That's a mistake.</p>
+    <a class="external-callout" href="https://www.thetimes.com/article/ae7c2f86-8f22-4176-9eda-5e437777f78e?shareToken=6881d31c78eecd661b06b3e72ca0459e" target="_blank" rel="noopener">
+      <span class="callout-source">The Times &middot; 15 April 2026</span>
+      <span class="callout-headline">Britain lags global leaders in making the most of AI innovation</span>
+      <span class="callout-detail">PwC warns businesses are held back by legacy technology and thinking of AI as a cost-cutting tool rather than an engine of growth. The next 12 months will be crucial.</span>
+    </a>
     <p>AI is rooted in the same systems we're trying to fix. If we're not careful, it just accelerates them. Efficiency is seductive. It feels like progress, but it is often just speeding up the same outcomes. And in doing so, it strengthens the gravitational pull of the average, making it even harder for leaders to break patterns, processes and behaviours.</p>
     <p>Last year, we moved from Salesforce to Notion. Not to do things the same way, but to do things differently. It was adopted. It was a lesson: when the tool fits the culture, people move. AI is the same principle at a much larger scale. It asks us to reconsider what our systems are actually for.</p>
     <p>For Forward Institute, that question is specific: <span class="highlight">how do we take ten years of experience, unprecedented access to senior leaders, and a belief system that already sets us apart, and make all of it dramatically more powerful?</span></p>
@@ -780,7 +827,7 @@
     <div class="stats">
       <div class="stat" style="border-color: var(--forest);">
         <div class="stat-number" style="color: var(--forest);">4</div>
-        <div class="stat-label" style="color: var(--night);">AI is enabling us to do new things. Lumen would previously have cost around &pound;90k to build. We are not replacing capability, but adding it.</div>
+        <div class="stat-label" style="color: var(--night);">AI is enabling us to do new things. Lumen would previously have taken upwards of &pound;90k to build. We are not replacing capability, but adding it.</div>
       </div>
       <div class="stat" style="border-color: var(--forest);">
         <div class="stat-number" style="color: var(--forest);">5</div>
