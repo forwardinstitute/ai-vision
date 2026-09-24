@@ -477,6 +477,52 @@
     font-size: 16px;
   }
 
+  /* Moves / how this becomes action */
+  .moves {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 48px;
+  }
+
+  .move {
+    padding: 28px 28px 32px;
+    border: 1px solid rgba(252, 242, 227, 0.1);
+    border-top: 3px solid var(--sunshine);
+    border-radius: 0 0 4px 4px;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .move:hover {
+    border-color: rgba(252, 242, 227, 0.25);
+    transform: translateY(-3px);
+  }
+
+  .move-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    opacity: 0.75;
+    display: block;
+    margin-bottom: 14px;
+  }
+
+  .move h3 {
+    font-size: clamp(19px, 1.9vw, 23px);
+    margin-bottom: 14px;
+  }
+
+  .move p {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  .move p:last-child {
+    margin-bottom: 0;
+  }
+
   /* Timeline */
   .timeline {
     margin-top: 48px;
@@ -746,6 +792,8 @@
     nav { padding: 16px 24px; }
     .stats { grid-template-columns: 1fr 1fr; gap: 24px; }
     .pillar { padding: 24px; }
+    .moves { grid-template-columns: 1fr; gap: 24px; }
+    .move { padding: 24px; }
     .quote-block { padding: 16px 20px; }
   }
 </style>
@@ -891,6 +939,52 @@
         <p>Our intellectual property becomes structured, versioned, and anchored. Fixed points of view that evolve through deliberate iteration, forming the underpinning of everything we build, say, and sell.</p>
       </div>
     </div>
+  </div>
+</section>
+
+
+<!-- HOW THIS BECOMES ACTION -->
+<section id="action">
+  <div class="section-inner reveal">
+    <div class="divider"></div>
+    <h2>How this becomes action.</h2>
+    <p class="lead">Three surfaces, not ten. One place for the people who work here, one place for the leaders we work with, and one that stands on its own. Everything else folds into those.</p>
+
+    <div class="moves">
+
+      <div class="move" style="border-top-color: var(--sunshine);">
+        <span class="move-label" style="color: var(--sunshine);">01 / Internal</span>
+        <h3>The Hub.</h3>
+        <p>Resourcing is the priority this quarter, and the Hub is how we get it. Time Logger is currently an internal tool. It should be the base for everyone who works for Forward Institute, staff and associates alike: briefs, roles, skills, who is available, who is committed, and what the work actually costs us.</p>
+        <p>That is also where the Associates question resolves. Associates access, update and interact with Notion and client information, scoped to the projects they are involved in and the programmes they deliver. Licence costs are a real issue, and right now they quietly decide who gets to see what. Access should follow the work, not the seat.</p>
+      </div>
+
+      <div class="move" style="border-top-color: var(--earth);">
+        <span class="move-label" style="color: var(--earth);">02 / External</span>
+        <h3>Compass.</h3>
+        <p>We maintain our advantage by expanding the role of the tool we have already built, in delivery and in analysis. Compass keeps developing against what customers actually need, not what we find interesting.</p>
+        <p>It stops being a session companion and becomes the one stop shop for leaders: where they apply, where they communicate, and how they understand what they are learning. One front door for the whole relationship, and one continuous thread instead of a series of resets.</p>
+      </div>
+
+      <div class="move" style="border-top-color: var(--sky);">
+        <span class="move-label" style="color: var(--sky);">03 / Standalone</span>
+        <h3>The Directory.</h3>
+        <p>Venues, speakers and proposals stay their own thing, and should. It serves a different job from the other two: it is how we design and sell a programme before a leader ever meets us, and it is the one surface we hand directly to a client.</p>
+        <p>It stays standalone, but it stops being an island. It reads from the same spine as everything else.</p>
+      </div>
+
+      <div class="move" style="border-top-color: var(--forest);">
+        <span class="move-label" style="color: var(--day);">04 / The rest</span>
+        <h3>Everything else folds in.</h3>
+        <p>We have built a lot, fast, and it currently lives as satellites. Each one was the right call at the time. Together they are now a tax: separate logins, separate data, separate places to look.</p>
+        <p>The commercial dashboard becomes a view in the Hub. Apply becomes Compass's front door. Community becomes how leaders stay connected inside Compass rather than beside it. The Quiet Line becomes a Compass experience, which is what its schema was already built for.</p>
+      </div>
+
+    </div>
+
+    <p style="margin-top: 48px;">Underneath all three, the same requirement: <span class="highlight">increase the flow and the storage of data, so it is available and accessible to the people who need it at the moment they need it.</span> Most of what slows us down is not a missing thought. It is a thought sitting somewhere nobody can reach. Storing it is the easy half. Getting it back to the right person, in the right room, on the right day, is the half that changes the work.</p>
+
+    <p>And one standard across all of it. An A class suite, internal and external: tools that take weight off delivery, boost the takeaways for individual leaders, and serve the commercial needs of our partners. The bar for anything we put in a leader's hands is the bar we hold in the room.</p>
   </div>
 </section>
 
