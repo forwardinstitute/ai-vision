@@ -555,6 +555,43 @@
     opacity: 0.75;
   }
 
+  /* Function shape */
+  .shape {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin: 36px 0 32px;
+  }
+
+  .shape-part {
+    padding-left: 18px;
+    border-left: 3px solid var(--sunshine);
+  }
+
+  .shape-part:nth-child(2) { border-left-color: var(--earth); }
+  .shape-part:nth-child(3) { border-left-color: var(--sky); }
+
+  .shape-name {
+    display: block;
+    font-family: 'Inria Serif', serif;
+    font-weight: 700;
+    font-size: 21px;
+    margin-bottom: 8px;
+  }
+
+  .shape-part:nth-child(1) .shape-name { color: var(--sunshine); }
+  .shape-part:nth-child(2) .shape-name { color: var(--earth); }
+  .shape-part:nth-child(3) .shape-name { color: var(--sky); }
+
+  .shape-note {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.55;
+    opacity: 0.85;
+  }
+
   /* Timeline */
   .timeline {
     margin-top: 48px;
@@ -826,6 +863,7 @@
     .pillar { padding: 24px; }
     .moves { grid-template-columns: 1fr; gap: 24px; }
     .lifecycle { grid-template-columns: 1fr; gap: 18px; }
+    .shape { grid-template-columns: 1fr; gap: 20px; }
     .move { padding: 24px; }
     .quote-block { padding: 16px 20px; }
   }
@@ -864,7 +902,7 @@
     </a>
     <p>AI is rooted in the same systems we're trying to fix. If we're not careful, it just accelerates them. Efficiency is seductive. It feels like progress, but it is often just speeding up the same outcomes. And in doing so, it strengthens the gravitational pull of the average, making it even harder for leaders to break patterns, processes and behaviours.</p>
     <p>Last year, we moved from Salesforce to Notion. Not to do things the same way, but to do things differently. It was adopted. It was a lesson: when the tool fits the culture, people move. AI is the same principle at a much larger scale. It asks us to reconsider what our systems are actually for.</p>
-    <p>For Forward Institute, that question is specific: <span class="highlight">how do we take ten years of experience, unprecedented access to senior leaders, and a belief system that already sets us apart, and make all of it dramatically more powerful?</span></p>
+    <p>For Forward Institute, that question is specific: <span class="highlight">how do we take over a decade of experience, unprecedented access to senior leaders, and a belief system that already sets us apart, and make all of it dramatically more powerful?</span></p>
     <p>We tell leaders to stop spectating and start authoring. AI is the most powerful tool for authorship that has ever existed. If we don't use it to put our argument into leaders' hands, not just their ears, we're guilty of exactly the managerial logic we're asking them to reject.</p>
     <p>That's why this matters for us specifically. Not because AI is new, or because everyone else is doing it. But because <span class="highlight">this technology makes our founding belief actionable at a scale we've never had.</span></p>
   </div>
@@ -1060,7 +1098,7 @@
     <div class="divider"></div>
     <h2>None of this works without trust.</h2>
     <p class="lead">People will only use our products if we remain credible.</p>
-    <p>Integrity is a USP in so much of what we do. Leaders share their thinking with us because they trust us. That trust has been built over ten years, in rooms, through relationships, face to face.</p>
+    <p>Integrity is a USP in so much of what we do. Leaders share their thinking with us because they trust us. That trust has been built over more than a decade, in rooms, through relationships, face to face.</p>
     <p>Now the opportunity to do more is easy. AI makes it simple to collect, aggregate, and analyse at scale. That is exactly why this moment is dangerous. Our values and our credibility hinge on how we make choices around data usage. What we collect, how we store it, who sees it, and what we do with it.</p>
     <p>Every decision we make about data must be a decision about <span id="trust-word" class="trust-shift">trust.</span> If we get this right, it becomes our strongest differentiator. If we get it wrong, nothing else in this document matters.</p>
   </div>
@@ -1139,6 +1177,25 @@
     <p>In the last eighteen months, work that would have cost upwards of <span class="stat-tooltip" tabindex="0">&pound;250k<span class="tooltip-arrow">&#9650;</span><span class="tooltip-bubble"><span class="tooltip-item"><span>Community</span><span class="tooltip-amount">c. &pound;60k</span></span><span class="tooltip-item"><span>Compass</span><span class="tooltip-amount">c. &pound;90k</span></span><span class="tooltip-item"><span>Commercial Dashboard</span><span class="tooltip-amount">c. &pound;30k</span></span><span class="tooltip-item"><span>Time Logger</span><span class="tooltip-amount">c. &pound;20k</span></span><span class="tooltip-item"><span>Unwrapped</span><span class="tooltip-amount">c. &pound;10k</span></span><span class="tooltip-item"><span>Cyber Essentials App</span><span class="tooltip-amount">c. &pound;10k</span></span></span></span> in external development has been built internally. Not because it was planned, but because the tools and the instinct were there. That is also why it is scattered. Each thing was built where the need was, as a separate site doing a small job. Finding out what works that way was right. Running what works that way is not, which is why the consolidation above matters more than any single new build. Twelve months ago, <span class="stat-tooltip" tabindex="0">platforms<span class="tooltip-arrow">&#9650;</span><span class="tooltip-bubble" style="width: 200px;">Typeform<br>Claude<br>ChatGPT<br>Notion<br>GitHub<br>Vercel<br>Supabase<br>Zapier</span></span> that now underpin live products and daily workflows weren't in our vocabulary. We were finalists in the AI Adoption category at the National AI Awards. This isn't a pitch for something new. This document is asking to do what's already happening, on purpose.</p>
     <p>I don't know everything we will need to achieve all of this. But I believe this is the direction of travel. And I believe that saying so plainly, before the plan is perfect, acting before we know the destination, is more valuable than stalling until we're certain.</p>
     <p>My identity needs to shift. I have operated as a fixer. To lead this, I need to become a driver. I can do this. But it means much of the operational load I am carrying needs to sit somewhere else or be deprioritised. What we build has to stay close to what we believe. The tools we produce are our chance to get our thinking into the hands of every leader we work with. That only works if the thinking is consistent.</p>
+    <p>Which means a shape, not just more of me.</p>
+
+    <div class="shape">
+      <div class="shape-part">
+        <span class="shape-name">Systems</span>
+        <span class="shape-note">The Hub, the Dashboard, and the backbone they sit on. Permissions, integration, and the plumbing that has to be dependable before anything else is interesting.</span>
+      </div>
+      <div class="shape-part">
+        <span class="shape-name">Product</span>
+        <span class="shape-note">Compass and the Directory. What a leader and a client actually touch, developed against their needs rather than ours.</span>
+      </div>
+      <div class="shape-part">
+        <span class="shape-name">Innovation</span>
+        <span class="shape-note">Held across both, with me. <span class="highlight">The flow of data through the organisation, and the spread of ideas through it.</span> That is the job I am asking for.</span>
+      </div>
+    </div>
+
+    <p>Two people and me is thin for four surfaces and a partner like BT. That is an argument for the consolidation rather than against the shape, because fewer places to maintain is what makes a small function viable at all. But it means being honest about the edge of it. Running and supporting what we own, at the standard a partner expects, is a different discipline from building it, and it needs to sit somewhere named rather than falling back to whoever built the thing.</p>
+
     <p>I need space and time to make mess before I tidy it up. Just as rehearsals are safe spaces to try things out before the audience come in, I think what the last 18 months has shown is that in the exploration, the path ahead can emerge.</p>
 
   </div>
